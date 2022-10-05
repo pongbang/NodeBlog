@@ -1,0 +1,25 @@
+.blog-message
+  position fixed
+  width 100%
+  z-index 9999
+  bottom 0
+
+.blog-message .alert
+  transform: translateY(52px)
+  opacity 1
+  &.show
+    opacity 1
+    transform: translateY(0)
+  &.move
+    animation slideUp 3s .3s forwards
+    @keyframes slideUp 
+      0% 
+        opacity 1
+        transform: translateY(0)
+      80%
+        opacity 1
+        transform: translateY(0)
+      100%
+        opacity 0
+        transform: translateY(-100px)
+  

@@ -1,0 +1,23 @@
+<header class="blog-head ">
+
+  <h1 class="blog-head--logo">
+    <a href="#">
+      <img src="../img/logo.jpg" alt="logo!">
+    </a>
+  </h1>
+  <nav class="blog-head--nav hidden-sm hidden-xs">
+    <ul class="blog-nav--list ">
+      {{#each navList}}
+      <li><a href="#">{{this}}</a></li>
+      {{/each}}
+    </ul>
+  </nav>
+  <div class="blog-head--search hidden-sm hidden-xs ">
+    <input class="blog-input--search" data-input="articles" placeholder="文章检索" type="text">
+    <i class="glyphicon glyphicon-search" data-submit="articles"></i>
+  </div>
+  <div class="blog-head--login hidden-sm hidden-xs">
+    <a class="blog-btn--login">登录</a> / <a class="blog-btn--register">注册</a>
+  </div>
+  <i class="blog-head-menu glyphicon glyphicon-list visible-sm visible-xs"></i>
+</header>

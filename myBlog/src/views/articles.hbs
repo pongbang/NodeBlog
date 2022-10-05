@@ -1,0 +1,25 @@
+{{#if count}}
+{{#each list}}
+<article class="blog-content--item">
+  <a href="javascript:;" data-router="article" data-article-id="{{_id}}">
+    <h3 class="blog-item--title">{{title}}</h3>
+    <p class="blog-item--date">
+      <i class="glyphicon glyphicon-time"></i> {{date}}
+    </p>
+    <p class="blog-item--author">{{author.nikname}}</p>
+    <img class="blog-item--illu" src="{{cover}}" alt="">
+    <p class="blog-item--desc">
+      {{content}}
+    </p>
+    <p class="blog-item--tags"><span class="blog-tags--hit">浏览
+        ({{hit_num}})</span><span class="blog-tags--like">点赞 ({{like_num}})</span> <span class="blog-tags--comment">评论
+        ({{comment_num}})</span></p>
+  </a>
+</article>
+{{/each}}
+{{else}}
+<article class="blog-content--item blog-content-never">
+  <h3 class="blog-item--title">很遗憾 没有找到对应的文章</h3>
+  <a class="blog-item--btn blog-btn" href="javascript:;" data-column-id="{{columnId}}" data-router="write"> 去写一篇把 </a>
+</article>
+{{/if}}

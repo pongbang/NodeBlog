@@ -1,0 +1,9 @@
+{{#if isLogin}}
+<a href="javascript:;" data-router="info" class="blog-head--avatar">
+  <img src="../img/avatar.webp" alt="!">
+  <i class="blog-head--write glyphicon glyphicon-pencil"></i>
+</a>
+{{else}}
+<a href="javascript:;" class="blog-btn--login" data-modal="login">登录</a> / <a href="javascript:;"
+  class="blog-btn--register" data-modal='register'>注册</a>
+{{/if}}

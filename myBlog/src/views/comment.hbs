@@ -1,0 +1,24 @@
+<div class="blog-comment blog-comment--editor">
+  <textarea class="blog-comment--input" data-input="comment" name="comment" autofocus></textarea>
+  <a class="blog-comment--submit  blog-btn blog-btn--reverse" href="javascript:;">提交</a>
+</div>
+{{#if comments.length}}
+<div class="blog-comment blog-comment--list">
+  <h3>评论列表</h3>
+  <ul>
+    {{#each comments}}
+    <li class="blog-comment--item">
+
+      <div class="blog-comment--user blog-line blog-line--row ">
+        <div class="blog-comment--avatar">
+          <img src="{{uid.avatar}}" alt="!">
+        </div>
+        <span class="blog-comment--name">{{uid.nikname}}</span>
+      </div>
+      <p class="blog-comment-content">{{content}}</p>
+      <p class="blog-comment-date">{{date}}</p>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+{{/if}}

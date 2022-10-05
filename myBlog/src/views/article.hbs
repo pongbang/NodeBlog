@@ -1,0 +1,28 @@
+<div class="blog-article typo">
+  <h3 class="blog-article--title">{{title}}</h3>
+  <div class="blog-article--info">
+    <span class="blog-info--item">
+      作者: {{author.nikname}}
+    </span>
+    <span class="blog-info--item">
+      <i class="glyphicon glyphicon-time"></i> {{date}}
+    </span>
+    <div class="visible-xs">
+      <span class="blog-info--item">
+        <i class="glyphicon glyphicon-heart-empty"></i> {{like_num}}
+      </span>
+      <span class="blog-info--item">
+        <i class="glyphicon glyphicon-eye-open"></i> {{hit_num}}
+      </span>
+      <span class="blog-info--item">
+        <i class="glyphicon glyphicon-edit"></i> {{comment_num}}
+      </span>
+    </div>
+  </div>
+  <div class="blog-article--content">
+    {{{content}}}
+  </div>
+
+</div>
+
+{{>comment}}

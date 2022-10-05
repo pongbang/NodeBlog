@@ -1,0 +1,36 @@
+.blog-toolbar
+  width 80px
+  background-color: #fff
+  border-radius radius-theme-size
+  min-height 0px
+  @media screen and (max-width:1190px)
+    margin-right: -560px
+  @media screen and (max-width:990px)
+    margin-right: -460px
+
+.blog-toolbar--item
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    cursor: pointer
+    padding: 15px 0
+    &>.glyphicon 
+      font-size 28px
+      padding-bottom 10px
+      transition color 1s
+      &.active
+        color red
+    &+.blog-toolbar--item
+      border-top 1px solid #f0f0f0
+.blog-toolbar
+  & a:link
+    text-decoration none
+  & a:hover
+    text-decoration none
+
+@keyframes likes
+  0% 
+    color #ccc
+  100% 
+    color red
